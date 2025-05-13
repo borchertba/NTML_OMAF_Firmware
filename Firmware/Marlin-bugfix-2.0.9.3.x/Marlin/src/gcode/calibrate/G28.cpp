@@ -144,7 +144,7 @@
       TERN_(SENSORLESS_HOMING, safe_delay(500)); // Short delay needed to settle
 
       do_blocking_move_to_xy(destination);
-      homeaxis(Z_AXIS);
+      //homeaxis(Z_AXIS);
     }
     else {
       LCD_MESSAGE(MSG_ZPROBE_OUT);
@@ -394,7 +394,7 @@ void GcodeSuite::G28() {
       constexpr bool doZ = false;
     #endif
 
-    TERN_(HOME_Z_FIRST, if (doZ) homeaxis(Z_AXIS));
+    //TERN_(HOME_Z_FIRST, if (doZ) homeaxis(Z_AXIS));
 
     const bool seenR = parser.seenval('R');
     const float z_homing_height = seenR ? parser.value_linear_units() : Z_HOMING_HEIGHT;
@@ -468,9 +468,9 @@ void GcodeSuite::G28() {
           #endif
 
           #if ENABLED(Z_SAFE_HOMING)
-            if (TERN1(POWER_LOSS_RECOVERY, !parser.seen_test('H'))) home_z_safely(); else homeaxis(Z_AXIS);
+            //if (TERN1(POWER_LOSS_RECOVERY, !parser.seen_test('H'))) home_z_safely(); else homeaxis(Z_AXIS);
           #else
-            homeaxis(Z_AXIS);
+            //homeaxis(Z_AXIS); // Don't home the Z axis lol
           #endif
           probe.move_z_after_homing();
         }
