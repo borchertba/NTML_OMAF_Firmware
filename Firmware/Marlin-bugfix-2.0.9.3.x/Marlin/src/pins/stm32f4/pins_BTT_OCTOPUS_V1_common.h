@@ -63,7 +63,7 @@
 // Z Probe (when not Z_MIN_PIN)
 //
 #ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN                   PB7
+  //#define Z_MIN_PROBE_PIN                   PB7
 #endif
 
 //
@@ -258,7 +258,11 @@
 #define HEATER_3_PIN                        PB11  // Heater3
 
 #define FAN_PIN                             PA8   // Fan0
-#define FAN1_PIN                            PE5   // Fan1
+//#define FAN1_PIN                            PE5   // Fan1
+
+#define SPINDLE_LASER_PWM_PIN               PE5
+#define SPINDLE_LASER_ENA_PIN               PB7
+
 #define FAN2_PIN                            PD12  // Fan2
 #define FAN3_PIN                            PD13  // Fan3
 #define FAN4_PIN                            PD14  // Fan4
