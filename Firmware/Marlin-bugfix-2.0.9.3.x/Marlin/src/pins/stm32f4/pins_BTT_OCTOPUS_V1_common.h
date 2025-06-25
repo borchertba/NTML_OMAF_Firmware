@@ -50,14 +50,8 @@
 //
 #define X_DIAG_PIN                          PG6   // X-STOP
 #define Y_DIAG_PIN                          PG9   // Y-STOP
-<<<<<<< HEAD
-//#define Z_DIAG_PIN                          PG10  // Z-STOP
-#define Z_DIAG_PIN                          PG6
-//#define Z2_DIAG_PIN                         PG11  // Z2-STOP
-=======
 #define Z_DIAG_PIN                          PG10  // Z-STOP
 #define Z2_DIAG_PIN                         PG11  // Z2-STOP
->>>>>>> parent of 5aeb014 (Swapped Z-Axis and X-Axis motor controllers)
 #define E0_DIAG_PIN                         PG12  // E0DET
 #define E1_DIAG_PIN                         PG13  // E1DET
 #define E2_DIAG_PIN                         PG14  // E2DET
