@@ -53,7 +53,7 @@
 #define Y_DIAG_PIN                          PG9   // Y-STOP
 //#define Z_DIAG_PIN                          PG10  // Z-STOP
 #define Z_DIAG_PIN                          PG6
-#define Z2_DIAG_PIN                         PG11  // Z2-STOP
+//#define Z2_DIAG_PIN                         PG11  // Z2-STOP
 #define E0_DIAG_PIN                         PG12  // E0DET
 #define E1_DIAG_PIN                         PG13  // E1DET
 #define E2_DIAG_PIN                         PG14  // E2DET
@@ -261,7 +261,7 @@
 //#define FAN1_PIN                            PE5   // Fan1
 
 #define SPINDLE_LASER_PWM_PIN               PE5
-#define SPINDLE_LASER_ENA_PIN               PB7
+#define SPINDLE_LASER_ENA_PIN               PG11
 
 #define FAN2_PIN                            PD12  // Fan2
 #define FAN3_PIN                            PD13  // Fan3
