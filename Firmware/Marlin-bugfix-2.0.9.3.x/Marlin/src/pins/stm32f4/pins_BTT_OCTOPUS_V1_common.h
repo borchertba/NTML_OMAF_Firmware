@@ -48,12 +48,16 @@
 //
 // Trinamic Stallguard pins
 //
-//#define X_DIAG_PIN                          PG6   // X-STOP
-#define X_DIAG_PIN                          PG10
+#define X_DIAG_PIN                          PG6   // X-STOP
 #define Y_DIAG_PIN                          PG9   // Y-STOP
+<<<<<<< HEAD
 //#define Z_DIAG_PIN                          PG10  // Z-STOP
 #define Z_DIAG_PIN                          PG6
 //#define Z2_DIAG_PIN                         PG11  // Z2-STOP
+=======
+#define Z_DIAG_PIN                          PG10  // Z-STOP
+#define Z2_DIAG_PIN                         PG11  // Z2-STOP
+>>>>>>> parent of 5aeb014 (Swapped Z-Axis and X-Axis motor controllers)
 #define E0_DIAG_PIN                         PG12  // E0DET
 #define E1_DIAG_PIN                         PG13  // E1DET
 #define E2_DIAG_PIN                         PG14  // E2DET
@@ -169,15 +173,11 @@
 //
 // Steppers
 //
-//#define X_STEP_PIN                          PF13  // MOTOR 0
-#define X_STEP_PIN                          PF11
-//#define X_DIR_PIN                           PF12
-#define X_DIR_PIN                           PG3
-//#define X_ENABLE_PIN                        PF14
-#define X_ENABLE_PIN                        PG5
+#define X_STEP_PIN                          PF13  // MOTOR 0
+#define X_DIR_PIN                           PF12
+#define X_ENABLE_PIN                        PF14
 #ifndef X_CS_PIN
-  //#define X_CS_PIN                          PC4
-  #define X_CS_PIN                          PC6
+  #define X_CS_PIN                          PC4
 #endif
 
 #define Y_STEP_PIN                          PG0   // MOTOR 1
@@ -187,15 +187,11 @@
   #define Y_CS_PIN                          PD11
 #endif
 
-//#define Z_STEP_PIN                          PF11  // MOTOR 2
-#define Z_STEP_PIN                          PF13
-//#define Z_DIR_PIN                           PG3
-#define Z_DIR_PIN                           PF12
-//#define Z_ENABLE_PIN                        PG5
-#define Z_ENABLE_PIN                        PF14
+#define Z_STEP_PIN                          PF11  // MOTOR 2
+#define Z_DIR_PIN                           PG3
+#define Z_ENABLE_PIN                        PG5
 #ifndef Z_CS_PIN
-  //#define Z_CS_PIN                          PC6
-  #define Z_CS_PIN                          PC4
+  #define Z_CS_PIN                          PC6
 #endif
 
 #define Z2_STEP_PIN                         PG4   // MOTOR 3
@@ -313,15 +309,13 @@
   //#define E3_HARDWARE_SERIAL Serial1
   //#define E4_HARDWARE_SERIAL Serial1
 
-  //#define X_SERIAL_TX_PIN                   PC4
-  #define X_SERIAL_TX_PIN                   PC6
+  #define X_SERIAL_TX_PIN                   PC4
   #define X_SERIAL_RX_PIN        X_SERIAL_TX_PIN
 
   #define Y_SERIAL_TX_PIN                   PD11
   #define Y_SERIAL_RX_PIN        Y_SERIAL_TX_PIN
-  
-  //#define Z_SERIAL_TX_PIN                   PC6
-  #define Z_SERIAL_TX_PIN                   PC4
+
+  #define Z_SERIAL_TX_PIN                   PC6
   #define Z_SERIAL_RX_PIN        Z_SERIAL_TX_PIN
 
   #define Z2_SERIAL_TX_PIN                  PC7
